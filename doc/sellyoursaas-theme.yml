@@ -7,10 +7,10 @@ page:
 base:
   font-color: #000000
   #font-family: Times-Roman
-  #font-size: 12
-  #line-height-length: 16
-  #line-height: $base-line-height-length / $base-font-size
-#vertical-spacing: $base-line-height-length
+  font-size: 12
+  line-height-length: 16
+  line-height: $base-line-height-length / $base-font-size
+vertical-spacing: $base-line-height-length
 heading:
   font-color: #b37d25
   font-size: 16
