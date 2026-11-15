@@ -1152,7 +1152,7 @@ if ($reusecontractid) {
 	$tmpthirdparty->tva_assuj = 1;
 	$tmpthirdparty->array_options['options_dolicloud'] = 'yesv2';
 	$tmpthirdparty->array_options['options_date_registration'] = dol_now();
-	$tmpthirdparty->array_options['options_domain_registration_page'] = getDomainFromURL($_SERVER["SERVER_NAME"], 1);
+	$tmpthirdparty->array_options['options_domain_registration_page'] = "https://".getDolGlobalString("SELLYOURSAAS_ACCOUNT_URL");
 	$tmpthirdparty->array_options['options_source'] = 'REGISTERFORM'.($origin ? '-'.$origin : '');
 	$tmpthirdparty->array_options['options_source_utm'] = (empty($_COOKIE['utm_source_cookie']) ? '' : $_COOKIE['utm_source_cookie']);
 

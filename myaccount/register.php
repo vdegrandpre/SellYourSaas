@@ -848,13 +848,12 @@ if ($reshook == 0) {
 					$countryuser = GETPOST('country');
 				}
 				if (empty($countryuser)) {
-					$countryuser='US';
+					$countryuser='QU';
 				}
 				$countryuser = strtoupper($countryuser);
 				print $form->select_country($countryuser, 'country', 'optionsValue="name"'.$disabled, 0, ($conf->dol_optimize_smallscreen ? 'minwidth200' : 'minwidth300'), 'code2', 1, 1); ?>
 				</div>
 			</div>
-
 				<?php
 			}
 			?>

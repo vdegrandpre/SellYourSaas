@@ -2891,8 +2891,6 @@ var select2arrayoflanguage = {
 </script>
 ";
 
-
-
 llxHeader($head, $langs->trans("MyAccount"), '', '', 0, 0, $arrayofjs, $arrayofcss, '', 'myaccount');
 
 
@@ -2917,8 +2915,8 @@ if (getDolGlobalString('SELLYOURSAAS_DASHBOARD_OFF')) {
 
 <?php
 
-$logoval = getDolGlobalString('SELLYOURSAAS_LOGO_MINI');
-$logoblackval = getDolGlobalString('SELLYOURSAAS_LOGO_MINI_BLACK');
+$logoval = "logo-2022-dolibarr-partenaire_small.png"; // not working getDolGlobalString('SELLYOURSAAS_LOGO_MINI');
+$logoblackval = "logo-2022-dolibarr-partenaire_small.png"; // not working getDolGlobalString('SELLYOURSAAS_LOGO_MINI_BLACK');
 if (is_object($mythirdpartyaccount) && $mythirdpartyaccount->array_options['options_domain_registration_page']) {
 	$domainforkey = strtoupper($mythirdpartyaccount->array_options['options_domain_registration_page']);
 	$domainforkey = preg_replace('/\./', '_', $domainforkey);
